@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>MiniVida - Serviços</title>
+</head>
+<body>
+  <header>
+    <h1>MiniVida</h1>
+    <nav>
+      <a href="index.html">Início</a> |
+      <a href="produtos.html">Produtos</a> |
+      <a href="servicos.html">Serviços</a> |
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Serviços Disponíveis</h2>
+
+    <section>
+      <h3>Retirada no Local</h3>
+      <p>Faça o pedido online e retire na loja física sem custo adicional.</p>
+      <p><strong>Valor: Grátis</strong></p>
+    </section>
+
+    <section>
+      <h3>Tele-entrega</h3>
+      <p>Receba seu pedido em até 2 horas na sua casa (disponível na área urbana).</p>
+      <p><strong>Valor: R$ 7,00</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MiniVida – Todos os direitos reservados.</p>
+    <p>Contato: contato@minivida.com | Instagram: @minividaeco</p>
+  </footer>
+</body>
+</html>

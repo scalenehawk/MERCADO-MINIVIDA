@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>MiniVida - Contato</title>
+</head>
+<body>
+  <header>
+    <h1>MiniVida</h1>
+    <nav>
+      <a href="index.html">Início</a> |
+      <a href="produtos.html">Produtos</a> |
+      <a href="servicos.html">Serviços</a> |
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Fale Conosco</h2>
+    <p><strong>Endereço:</strong> Rua das Árvores, 456 – Bairro Verde</p>
+    <p><strong>E-mail:</strong> contato@minivida.com</p>
+    <p><strong>Telefone:</strong> (11) 99999-1234</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MiniVida – Todos os direitos reservados.</p>
+    <p>Contato: contato@minivida.com | Instagram: @minividaeco</p>
+  </footer>
+</body>
+</html>
