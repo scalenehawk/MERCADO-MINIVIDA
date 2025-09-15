@@ -3,74 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title>MiniVida - Cadastro de Cliente</title>
-
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="bg-success text-white text-center p-3">
+  <header>
     <h1>MiniVida</h1>
     <nav>
-      <a href="index.html" class="text-white">Início</a> |
-      <a href="produtos.html" class="text-white">Produtos</a> |
-      <a href="servicos.html" class="text-white">Serviços</a> |
-      <a href="contato.html" class="text-white">Contato</a> |
-      <a href="cadastro.html" class="text-white">Cadastro</a>
+      <a href="index.html">Início</a> |
+      <a href="produtos.html">Produtos</a> |
+      <a href="servicos.html">Serviços</a> |
+      <a href="contato.html">Contato</a> |
+      <a href="cadastro.html">Cadastro</a>
     </nav>
   </header>
 
   <main class="container mt-4">
     <h2>Cadastro de Cliente</h2>
     <form>
-      
       <div class="mb-3">
         <label for="nome" class="form-label">Nome completo</label>
         <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
       </div>
 
-  
       <div class="mb-3">
         <label for="cpf" class="form-label">CPF</label>
         <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required>
       </div>
 
-    
       <div class="mb-3">
         <label for="telefone" class="form-label">Telefone</label>
         <input type="tel" class="form-control" id="telefone" placeholder="(99) 99999-9999" required>
       </div>
 
-      
       <div class="mb-3">
         <label for="email" class="form-label">E-mail</label>
         <input type="email" class="form-control" id="email" placeholder="email@exemplo.com" required>
       </div>
 
-    
       <div class="mb-3">
         <label class="form-label">Sexo</label><br>
-        <input type="radio" name="sexo" id="sexoM" value="M"> 
-        <label for="sexoM">Masculino</label>  
-        <input type="radio" name="sexo" id="sexoF" value="F"> 
-        <label for="sexoF">Feminino</label>  
-        <input type="radio" name="sexo" id="sexoO" value="O"> 
-        <label for="sexoO">Outro</label>
+        <input type="radio" name="sexo" id="sexoM" value="M"> <label for="sexoM">Masculino</label>
+        <input type="radio" name="sexo" id="sexoF" value="F"> <label for="sexoF">Feminino</label>
+        <input type="radio" name="sexo" id="sexoO" value="O"> <label for="sexoO">Outro</label>
       </div>
 
-    
       <div class="mb-3">
         <label for="endereco" class="form-label">Endereço</label>
         <textarea class="form-control" id="endereco" rows="2" placeholder="Digite seu endereço completo"></textarea>
       </div>
 
-   
       <h3 class="mt-4">Agendamento</h3>
 
       <div class="mb-3">
         <label class="form-label">Forma de atendimento</label><br>
-        <input type="radio" name="servico" id="retirada" value="retirada" required>
+        <input type="radio" name="servico" id="retirada" value="retirada" required> 
         <label for="retirada">Retirada no local</label>  
-        <input type="radio" name="servico" id="entrega" value="entrega" required>
+        <input type="radio" name="servico" id="entrega" value="entrega" required> 
         <label for="entrega">Tele-entrega</label>
       </div>
 
@@ -84,19 +76,20 @@
         <input type="time" id="hora" class="form-control" required>
       </div>
 
-      
       <button type="submit" class="btn btn-success">Cadastrar</button>
     </form>
   </main>
 
- 
-  <footer class="text-center mt-4 p-3 bg-light">
+  
+  <footer>
     <p>&copy; 2025 MiniVida – Todos os direitos reservados.</p>
     <p>Contato: contato@minivida.com | Instagram: @minividaeco</p>
     <p id="dataHora"></p>
   </footer>
 
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
+
