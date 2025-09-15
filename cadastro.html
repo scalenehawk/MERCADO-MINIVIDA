@@ -1,47 +1,103 @@
-<form class="container mt-4">
-  <h2>Cadastro de Cliente</h2>
-  <div class="mb-3">
-    <label for="nome" class="form-label">Nome completo</label>
-    <input type="text" class="form-control" id="nome" required>
-  </div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>MiniVida - Cadastro de Cliente</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-  <div class="mb-3">
-    <label for="cpf" class="form-label">CPF</label>
-    <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required>
-  </div>
+<body>
+  <header class="bg-success text-white text-center p-3">
+    <h1>MiniVida</h1>
+    <nav>
+      <a href="index.html" class="text-white">Início</a> |
+      <a href="produtos.html" class="text-white">Produtos</a> |
+      <a href="servicos.html" class="text-white">Serviços</a> |
+      <a href="contato.html" class="text-white">Contato</a> |
+      <a href="cadastro.html" class="text-white">Cadastro</a>
+    </nav>
+  </header>
 
-  <div class="mb-3">
-    <label for="telefone" class="form-label">Telefone</label>
-    <input type="tel" class="form-control" id="telefone" required>
-  </div>
+  <main class="container mt-4">
+    <h2>Cadastro de Cliente</h2>
+    <form>
+      <!-- Nome -->
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome completo</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+      </div>
 
-  <div class="mb-3">
-    <label for="email" class="form-label">E-mail</label>
-    <input type="email" class="form-control" id="email" required>
-  </div>
+      <!-- CPF -->
+      <div class="mb-3">
+        <label for="cpf" class="form-label">CPF</label>
+        <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required>
+      </div>
 
-  <div class="mb-3">
-    <label class="form-label">Sexo</label><br>
-    <input type="radio" name="sexo" value="M"> Masculino
-    <input type="radio" name="sexo" value="F"> Feminino
-    <input type="radio" name="sexo" value="O"> Outro
-  </div>
+      <!-- Telefone -->
+      <div class="mb-3">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input type="tel" class="form-control" id="telefone" placeholder="(99) 99999-9999" required>
+      </div>
 
-  <div class="mb-3">
-    <label for="endereco" class="form-label">Endereço</label>
-    <textarea class="form-control" id="endereco" rows="2"></textarea>
-  </div>
+      <!-- Email -->
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="email" placeholder="email@exemplo.com" required>
+      </div>
 
-  <h3>Agendamento</h3>
-  <label>Opção de Serviço:</label><br>
-  <input type="radio" name="servico" value="retirada"> Retirada no local <br>
-  <input type="radio" name="servico" value="entrega"> Tele-entrega <br><br>
+      <!-- Sexo -->
+      <div class="mb-3">
+        <label class="form-label">Sexo</label><br>
+        <input type="radio" name="sexo" id="sexoM" value="M"> 
+        <label for="sexoM">Masculino</label>  
+        <input type="radio" name="sexo" id="sexoF" value="F"> 
+        <label for="sexoF">Feminino</label>  
+        <input type="radio" name="sexo" id="sexoO" value="O"> 
+        <label for="sexoO">Outro</label>
+      </div>
 
-  <label for="data">Data:</label>
-  <input type="date" id="data" required><br><br>
+      <!-- Endereço -->
+      <div class="mb-3">
+        <label for="endereco" class="form-label">Endereço</label>
+        <textarea class="form-control" id="endereco" rows="2" placeholder="Digite seu endereço completo"></textarea>
+      </div>
 
-  <label for="hora">Horário:</label>
-  <input type="time" id="hora" required><br><br>
+      <!-- Agendamento -->
+      <h3 class="mt-4">Agendamento</h3>
 
-  <button type="submit" class="btn btn-success">Cadastrar</button>
-</form>
+      <div class="mb-3">
+        <label class="form-label">Forma de atendimento</label><br>
+        <input type="radio" name="servico" id="retirada" value="retirada" required>
+        <label for="retirada">Retirada no local</label>  
+        <input type="radio" name="servico" id="entrega" value="entrega" required>
+        <label for="entrega">Tele-entrega</label>
+      </div>
+
+      <div class="mb-3">
+        <label for="data" class="form-label">Data</label>
+        <input type="date" id="data" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="hora" class="form-label">Horário</label>
+        <input type="time" id="hora" class="form-control" required>
+      </div>
+
+      <!-- Botão -->
+      <button type="submit" class="btn btn-success">Cadastrar</button>
+    </form>
+  </main>
+
+  <!-- Rodapé único -->
+  <footer class="text-center mt-4 p-3 bg-light">
+    <p>&copy; 2025 MiniVida – Todos os direitos reservados.</p>
+    <p>Contato: contato@minivida.com | Instagram: @minividaeco</p>
+    <p id="dataHora"></p>
+  </footer>
+
+  <!-- Bootstrap + JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
